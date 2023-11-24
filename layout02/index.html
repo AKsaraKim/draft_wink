@@ -1,0 +1,2648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>shinhan wink admin UI</title>
+
+  <link rel="stylesheet" href="resources/css/reset.css">
+  <link rel="stylesheet" href="resources/css/layout.css">  
+  <link rel="stylesheet" href="resources/lib/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="resources/lib/swiper/scrollbar.min.css">
+
+  <script type="text/javascript" src="resources/lib/jquery/jquery-3.6.4.min.js"></script>
+  <script type="text/javascript" src="resources/js/interaction.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="navbar on">
+            <ul class="navbar-nav notice">
+                <li>
+                    <label>공지사항</label>
+                    <span>본부별 자산 추이 등록완료</span>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto person-info">
+                <li>
+                    <form>
+                        <div class="ipt-search">
+                            <input type="search" placeholder="통합검색">
+                            <button class="" type="submit">
+                            </button>
+                        </div>
+                    </form>
+                </li>
+                <li>
+                    <span class="date">2023-04-12</span>
+                </li>
+                <li>
+                    <span class="dep">ICT개발부</span>
+                    <span class="name">김성은</span>
+                    <span class="num">(217917)</span>
+                </li>
+                <li>
+                    <div class="al_wrap">
+                        <button class="btn_alarm">
+                            알림
+                            <i class="al_new"></i>
+                        </button>
+                        <div class="al_box">
+                            <button class="btn_close">닫기</button>
+                            <h3>알림</h3>
+                            <ul>
+                                <li>
+                                    <button class="btn_del">삭제</button>                                    
+                                    <span class="date">2023-05-12</span>
+                                    <span class="text">변동금리대상여신 기간이 도래했습니다.</span>                                    
+                                </li>
+                                <li>
+                                    <button class="btn_del">삭제</button>                                    
+                                    <span class="date">2023-05-12</span>
+                                    <span class="text">투자자산 등 기일관련 안내 기간이 도래했습니다.</span>                                    
+                                </li>
+                                <li>
+                                    <button class="btn_del">삭제</button>                                    
+                                    <span class="date">2023-05-12</span>
+                                    <span class="text">특기 사항기일 도래 기간이 도래했습니다.</span>                                    
+                                </li>
+                                <li>
+                                    <button class="btn_del">삭제</button>                                    
+                                    <span class="date">2023-05-12</span>
+                                    <span class="text">심사중인 여신 안내 기간이 도래했습니다.</span>                                    
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img class="person" src="resources/images/person.png">
+                </li>
+            </ul>
+        </nav>
+        <aside class="main-sidebar on">
+            <a href="#" class="brand-link">                
+                <span>wink</span>
+                <label>개발서버</label>
+            </a>
+            <div class="sidebar">
+                <div class="fd-btn-wrap">
+                    <button class="btn-fd">폴딩버튼</button>
+                </div>
+                <nav>
+                    <ul class="nav-sidebar">
+                        <li>
+                            <button class="all_menu">
+                                <span>전체메뉴</span>
+                            </button>
+                        </li>                        
+                        <li>
+                            <button class="favorites">
+                                <span>즐겨찾기</span>
+                            </button>
+                            <div class="main_fav_box">
+                                <h3>즐겨찾기목록</h3>
+                                <ul>
+                                    <li>                                        
+                                        <button class="fav_item">
+                                            상환스케줄시뮬레이션
+                                            <span class="num">[21140]</span>
+                                        </button>
+                                        <button class="btn_del">삭제</button>
+                                    </li>
+                                    <li>
+                                        <button class="btn_del">삭제</button>
+                                        <button class="fav_item">
+                                            상환스케줄시뮬레이션
+                                            <span class="num">[21140]</span>
+                                        </button>
+                                        <button class="btn_del">삭제</button>
+                                    </li>
+                                    <li>
+                                        <button class="fav_item">
+                                            상환스케줄시뮬레이션
+                                            <span class="num">[21140]</span>
+                                        </button>
+                                        <button class="btn_del">삭제</button>
+                                    </li>
+                                    <li>
+                                        <button class="fav_item">
+                                            상환스케줄시뮬레이션
+                                            <span class="num">[21140]</span>
+                                        </button>
+                                        <button class="btn_del">삭제</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="config">
+                                <span>설정</span>
+                            </button>
+                            <div class="main_config_box">
+                                <ul>
+                                    <li>
+                                        <label>테마선택</label>
+                                        <div class="sel_theme">
+                                            <span>Light</span>
+                                            <div class="ipt_box sel_thm">
+                                                <label>
+                                                    <input type="checkbox" class="swc_sel_thm">
+                                                    <span>선택</span>
+                                                </label>
+                                            </div>
+                                            <span>Dark</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label>레이아웃 선택</label>
+                                        <div class="sel_theme">
+                                            <span>1단</span>
+                                            <div class="ipt_box sel_lot">
+                                                <label>
+                                                    <input type="checkbox" class="swc_layout">
+                                                    <span>선택</span>
+                                                </label>
+                                            </div>
+                                            <span>2단</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <button class="bug_report">
+                                <span>버그신고</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="help">
+                                <span>도움말</span>
+                            </button>                            
+                        </li>
+                        <li>
+                            <button class="logout">
+                                <span>로그아웃</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="chatbot">
+                    <button>챗봇과 대화하기</button>
+                    <div class="chatbot_box">
+                        <button class="btn_close">닫기</button>
+                        <div class="chat_wrap">
+                            <p class="chat_noti">
+                                <span>2023년 5월 9일 화요일</span>
+                            </p>
+                            <p class="chat_char">
+                                <span>안녕하세요, WINK AI챗봇입니다. 무엇이 궁금하신가요?</span>
+                            </p>
+                            <p class="chat_user">
+                                <span>안녕하세요. 상환스케줄시뮬레이션 관한 항목이 궁금합니다.</span>
+                            </p>
+                            <p class="chat_char">
+                                <span>상환스케줄시뮬레이션 항목은 <a href="#">영업 > 영업공통 > 상담 > 상환스케줄시뮬레이션[21140]</a> 에서 확인이 가능하십니다.</span>
+                                <span>또 궁금하신 항목이 있으신가요?</span>
+                            </p>
+                        </div>
+                        <div class="chat_ipt">
+                            <div class="ipt_wrap">
+                                <textarea>
+그 항목번호의 바로가기 번호는 어떻게 되나요
+                                </textarea>
+                                <button>입력</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </aside>
+        <div class="content-wrapper on">
+            <div class="dtl-tree on">
+                <label>> 전체메뉴</label>
+                <ul class="nav-tree">
+                    <li>
+                        <a href="#">경영정보</a>
+                        <ul>
+                            <li>
+                                <a href="#" class="on">관리회계</a>
+                            </li>                                
+                            <li>
+                                <a href="#">리스크관리</a>
+                            </li>
+                            <li>
+                                <a href="#">RDM</a>
+                            </li>                                
+                            <li>
+                                <a href="#">영업실적집계</a>
+                            </li>
+                            <li>
+                                <a href="#">S-BOARD</a>
+                            </li>                                
+                            <li>
+                                <a href="#">성과관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">경영정보</a>
+                        <ul>
+                            <li>
+                                <a href="#">관리회계</a>
+                            </li>                                
+                            <li>
+                                <a href="#">리스크관리</a>
+                            </li>
+                            <li>
+                                <a href="#">RDM</a>
+                            </li>                                
+                            <li>
+                                <a href="#">영업실적집계</a>
+                            </li>
+                            <li>
+                                <a href="#">S-BOARD</a>
+                            </li>                                
+                            <li>
+                                <a href="#">성과관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">경영정보</a>
+                        <ul>
+                            <li>
+                                <a href="#">관리회계</a>
+                            </li>                                
+                            <li>
+                                <a href="#">리스크관리</a>
+                            </li>
+                            <li>
+                                <a href="#">RDM</a>
+                            </li>                                
+                            <li>
+                                <a href="#">영업실적집계</a>
+                            </li>
+                            <li>
+                                <a href="#">S-BOARD</a>
+                            </li>                                
+                            <li>
+                                <a href="#">성과관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">경영정보</a>
+                        <ul>
+                            <li>
+                                <a href="#">관리회계</a>
+                            </li>                                
+                            <li>
+                                <a href="#">리스크관리</a>
+                            </li>
+                            <li>
+                                <a href="#">RDM</a>
+                            </li>                                
+                            <li>
+                                <a href="#">영업실적집계</a>
+                            </li>
+                            <li>
+                                <a href="#">S-BOARD</a>
+                            </li>                                
+                            <li>
+                                <a href="#">성과관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">경영정보</a>
+                        <ul>
+                            <li>
+                                <a href="#">관리회계</a>
+                            </li>                                
+                            <li>
+                                <a href="#">리스크관리</a>
+                            </li>
+                            <li>
+                                <a href="#">RDM</a>
+                            </li>                                
+                            <li>
+                                <a href="#">영업실적집계</a>
+                            </li>
+                            <li>
+                                <a href="#">S-BOARD</a>
+                            </li>                                
+                            <li>
+                                <a href="#">성과관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">경영정보</a>
+                        <ul>
+                            <li>
+                                <a href="#">관리회계</a>
+                            </li>                                
+                            <li>
+                                <a href="#">리스크관리</a>
+                            </li>
+                            <li>
+                                <a href="#">RDM</a>
+                            </li>                                
+                            <li>
+                                <a href="#">영업실적집계</a>
+                            </li>
+                            <li>
+                                <a href="#">S-BOARD</a>
+                            </li>                                
+                            <li>
+                                <a href="#">성과관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">경영정보</a>
+                        <ul>
+                            <li>
+                                <a href="#">관리회계</a>
+                            </li>                                
+                            <li>
+                                <a href="#">리스크관리</a>
+                            </li>
+                            <li>
+                                <a href="#">RDM</a>
+                            </li>                                
+                            <li>
+                                <a href="#">영업실적집계</a>
+                            </li>
+                            <li>
+                                <a href="#">S-BOARD</a>
+                            </li>                                
+                            <li>
+                                <a href="#">성과관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">경영정보</a>
+                        <ul>
+                            <li>
+                                <a href="#">관리회계</a>
+                            </li>                                
+                            <li>
+                                <a href="#">리스크관리</a>
+                            </li>
+                            <li>
+                                <a href="#">RDM</a>
+                            </li>                                
+                            <li>
+                                <a href="#">영업실적집계</a>
+                            </li>
+                            <li>
+                                <a href="#">S-BOARD</a>
+                            </li>                                
+                            <li>
+                                <a href="#">성과관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">경영정보</a>
+                        <ul>
+                            <li>
+                                <a href="#">관리회계</a>
+                            </li>                                
+                            <li>
+                                <a href="#">리스크관리</a>
+                            </li>
+                            <li>
+                                <a href="#">RDM</a>
+                            </li>                                
+                            <li>
+                                <a href="#">영업실적집계</a>
+                            </li>
+                            <li>
+                                <a href="#">S-BOARD</a>
+                            </li>                                
+                            <li>
+                                <a href="#">성과관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="dtl-tree scd on">
+                <div class="fd-btn-wrap">
+                    <button class="btn-tr-fd">폴딩버튼</button>
+                </div>
+                <label>> 관리회계</label>
+                <ul class="nav-tree">
+                    <li>
+                        <a href="#">상담/신청</a>
+                        <ul>
+                            <li>
+                                <a href="#" class="on">일반리스상담</a>
+                            </li>                                
+                            <li>
+                                <a href="#">일반리스신청</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사후관리</a>
+                        <ul>
+                            <li>
+                                <a href="#">리스료조정처리</a>
+                            </li>                                
+                            <li>
+                                <a href="#">만기상담현황</a>
+                            </li>
+                            <li>
+                                <a href="#">리스만기현황</a>
+                            </li>                                
+                            <li>
+                                <a href="#">만기양도처리</a>
+                            </li>
+                            <li>
+                                <a href="#">만기반환처리(재리스포함)</a>
+                            </li>                                
+                            <li>
+                                <a href="#">물건회수비용등록</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">상담/신청</a>
+                        <ul>
+                            <li>
+                                <a href="#">일반리스상담</a>
+                            </li>                                
+                            <li>
+                                <a href="#">일반리스신청</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사후관리</a>
+                        <ul>
+                            <li>
+                                <a href="#">리스료조정처리</a>
+                            </li>                                
+                            <li>
+                                <a href="#">만기상담현황</a>
+                            </li>
+                            <li>
+                                <a href="#">리스만기현황</a>
+                            </li>                                
+                            <li>
+                                <a href="#">만기양도처리</a>
+                            </li>
+                            <li>
+                                <a href="#">만기반환처리(재리스포함)</a>
+                            </li>                                
+                            <li>
+                                <a href="#">물건회수비용등록</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">상담/신청</a>
+                        <ul>
+                            <li>
+                                <a href="#">일반리스상담</a>
+                            </li>                                
+                            <li>
+                                <a href="#">일반리스신청</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사후관리</a>
+                        <ul>
+                            <li>
+                                <a href="#">리스료조정처리</a>
+                            </li>                                
+                            <li>
+                                <a href="#">만기상담현황</a>
+                            </li>
+                            <li>
+                                <a href="#">리스만기현황</a>
+                            </li>                                
+                            <li>
+                                <a href="#">만기양도처리</a>
+                            </li>
+                            <li>
+                                <a href="#">만기반환처리(재리스포함)</a>
+                            </li>                                
+                            <li>
+                                <a href="#">물건회수비용등록</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">상담/신청</a>
+                        <ul>
+                            <li>
+                                <a href="#">일반리스상담</a>
+                            </li>                                
+                            <li>
+                                <a href="#">일반리스신청</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사후관리</a>
+                        <ul>
+                            <li>
+                                <a href="#">리스료조정처리</a>
+                            </li>                                
+                            <li>
+                                <a href="#">만기상담현황</a>
+                            </li>
+                            <li>
+                                <a href="#">리스만기현황</a>
+                            </li>                                
+                            <li>
+                                <a href="#">만기양도처리</a>
+                            </li>
+                            <li>
+                                <a href="#">만기반환처리(재리스포함)</a>
+                            </li>                                
+                            <li>
+                                <a href="#">물건회수비용등록</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">상담/신청</a>
+                        <ul>
+                            <li>
+                                <a href="#">일반리스상담</a>
+                            </li>                                
+                            <li>
+                                <a href="#">일반리스신청</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">사후관리</a>
+                        <ul>
+                            <li>
+                                <a href="#">리스료조정처리</a>
+                            </li>                                
+                            <li>
+                                <a href="#">만기상담현황</a>
+                            </li>
+                            <li>
+                                <a href="#">리스만기현황</a>
+                            </li>                                
+                            <li>
+                                <a href="#">만기양도처리</a>
+                            </li>
+                            <li>
+                                <a href="#">만기반환처리(재리스포함)</a>
+                            </li>                                
+                            <li>
+                                <a href="#">물건회수비용등록</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="content on">
+                <div class="scr-tab">
+                    <ul>
+                        <li>
+                            <button class="tab_item on">상환스케줄시뮬레이션</button>
+                            <button class="btn_close">닫기</button>
+                        </li>
+                        <li>
+                            <button class="tab_item">상환스케줄시뮬레이션</button>
+                            <button class="btn_close">닫기</button>
+                        </li>
+                        <li>
+                            <button class="tab_item">상환스케줄시뮬레이션</button>
+                            <button class="btn_close">닫기</button>
+                        </li>
+                        <li>
+                            <button class="tab_item">상환스케줄시뮬레이션</button>
+                            <button class="btn_close">닫기</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cont_page">
+                    <section class="content-header">
+                        <div class="tit">
+                            <h1>
+                                <button class="btn_favor">즐겨찾기</button>
+                                상환스케줄시뮬레이션
+                                <span class="num">[21140]</span>                                
+                                <button class="btn-help">도움말</button>
+                            </h1>
+                        </div>
+                        <div class="root">
+                            <ol class="breadcrumb">
+                                <li><a href="#">영업</a></li>
+                                <li><a href="#">영업공통</a></li>
+                                <li><a href="#">상담</a></li>
+                                <li class="active"><a href="#">일반리스상담</a></li>
+                            </ol>
+                        </div>
+                    </section>
+                    <section class="content-header-sub">
+                        <div class="card flat header-info">                        
+                            <div class="card-body">
+                                <ul class="row line">
+                                    <li class="nx-full">
+                                        <select class="custom-select">
+                                            <option>관련메뉴</option>
+                                        </select>
+                                    </li>
+                                    <li class="nx-wall">
+                                        <label>프로그램 아이디</label>
+                                        <span>LF1120</span>
+                                    </li>
+                                    <li class="nx-wall">
+                                        <label>BRM 담당부서</label>
+                                        <span>기업금융지원부</span>
+                                    </li>
+                                    <li class="nx-last">
+                                        <label>IT담당자</label>
+                                        <span>정우진</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="content-form">
+                        <div class="card">       
+                            <div class="card-body">
+                                <ul class="fm-wrap">
+                                    <li>
+                                        <h4>
+                                            기본조건
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>통화구분</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>상품명</th>
+                                                    <td colspan="3">
+                                                        <ul class="ins-box box12">
+                                                            <li>
+                                                                <ul class="fm_ipt_btn">
+                                                                    <li>
+                                                                        <input type="text" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="infm_btn">검색</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <input type="text" />
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <th>
+                                                        대출금액
+                                                    </th>
+                                                    <td>
+                                                        <input type="text" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <ul class="fm_ipt_mth">
+                                                            <li>
+                                                                <input type="text" />                                                            
+                                                            </li>
+                                                            <li>
+                                                                <button class="infm_btn mth">날짜선택</button>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td colspan="3">
+                                                        <ul class="ins-box">
+                                                            <li>
+                                                                <ul class="fm_ipt_sel">
+                                                                    <li>
+                                                                        <select>
+                                                                            <option>선택하세요</option>
+                                                                        </select>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="text" />
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <ul class="fm_ipt_mth">
+                                                                    <li>
+                                                                        <input type="text" />                                                            
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="infm_btn mth">날짜선택</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <ul class="fm_ipt_unt">
+                                                                    <li><input type="text" /></li>
+                                                                    <li>개월</li>
+                                                                </ul>                                                            
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환주기</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>초회차조정여부</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>만기일고정여부</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>N</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>단수처리</th>
+                                                    <td>
+                                                        <ul class="fm_ipt_dual">
+                                                            <li>
+                                                                <select>
+                                                                    <option>선택하세요</option>
+                                                                </select>
+                                                            </li>
+                                                            <li>
+                                                                <select>
+                                                                    <option>선택하세요</option>
+                                                                </select>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>대출기간분할여부</th>
+                                                    <td colspan="3">
+                                                        <ul class="fm_ipt_dual">
+                                                            <li>
+                                                                <label>
+                                                                    <input type="radio" name="aa001">
+                                                                    Y
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input type="radio" name="aa001">
+                                                                    N
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </td>                                                
+                                                    <th>리스방식</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>리스료계산방식</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>규손금적용</th>
+                                                    <td colspan="3">
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>수입수수료</th>
+                                                    <td>
+                                                        <input type="number ">
+                                                    </td>
+                                                    <th>지급수수료</th>
+                                                    <td>
+                    
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            이자납입정보
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            금리조건
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            보증금
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            잔존가치
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            여신기간
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-dt">
+                                            <thead>
+                                                <tr>
+                                                    <th>기간</th>
+                                                    <th>여신기간(개월)</th>
+                                                    <th>원금상환비율(%)</th>
+                                                    <th>여신금액</th>
+                                                    <th>가감금리(%)</th>
+                                                    <th>실행이자율(%)</th>
+                                                    <th>기간리스료</th>
+                                                    <th>기간자동차세</th>
+                                                    <th>기간M/T수수료</th>
+                                                    <th>기간보험료</th>
+                                                    <th>납입액</th>
+                                                </tr>    
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            수익률
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            스케줄내역
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-dt">
+                                            <thead>
+                                                <tr>
+                                                    <th>기간</th>
+                                                    <th>여신기간(개월)</th>
+                                                    <th>원금상환비율(%)</th>
+                                                    <th>여신금액</th>
+                                                    <th>가감금리(%)</th>
+                                                    <th>실행이자율(%)</th>
+                                                    <th>기간리스료</th>
+                                                    <th>기간자동차세</th>
+                                                    <th>기간M/T수수료</th>
+                                                    <th>기간보험료</th>
+                                                    <th>납입액</th>
+                                                </tr>    
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                        <div class="card">       
+                            <div class="card-body">
+                                <ul class="fm-wrap">
+                                    <li>
+                                        <h4>
+                                            기본조건
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>통화구분</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>상품명</th>
+                                                    <td colspan="3">
+                                                        <ul class="ins-box box12">
+                                                            <li>
+                                                                <ul class="fm_ipt_btn">
+                                                                    <li>
+                                                                        <input type="text" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="infm_btn">검색</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <input type="text" />
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <th>
+                                                        대출금액
+                                                    </th>
+                                                    <td>
+                                                        <input type="text" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <ul class="fm_ipt_mth">
+                                                            <li>
+                                                                <input type="text" />                                                            
+                                                            </li>
+                                                            <li>
+                                                                <button class="infm_btn mth">날짜선택</button>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td colspan="3">
+                                                        <ul class="ins-box">
+                                                            <li>
+                                                                <ul class="fm_ipt_sel">
+                                                                    <li>
+                                                                        <select>
+                                                                            <option>선택하세요</option>
+                                                                        </select>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="text" />
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <ul class="fm_ipt_mth">
+                                                                    <li>
+                                                                        <input type="text" />                                                            
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="infm_btn mth">날짜선택</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <ul class="fm_ipt_unt">
+                                                                    <li><input type="text" /></li>
+                                                                    <li>개월</li>
+                                                                </ul>                                                            
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환주기</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>초회차조정여부</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>만기일고정여부</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>N</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>단수처리</th>
+                                                    <td>
+                                                        <ul class="fm_ipt_dual">
+                                                            <li>
+                                                                <select>
+                                                                    <option>선택하세요</option>
+                                                                </select>
+                                                            </li>
+                                                            <li>
+                                                                <select>
+                                                                    <option>선택하세요</option>
+                                                                </select>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>대출기간분할여부</th>
+                                                    <td colspan="3">
+                                                        <ul class="fm_ipt_dual">
+                                                            <li>
+                                                                <label>
+                                                                    <input type="radio" name="aa001">
+                                                                    Y
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input type="radio" name="aa001">
+                                                                    N
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </td>                                                
+                                                    <th>리스방식</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>리스료계산방식</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>규손금적용</th>
+                                                    <td colspan="3">
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>수입수수료</th>
+                                                    <td>
+                                                        <input type="number ">
+                                                    </td>
+                                                    <th>지급수수료</th>
+                                                    <td>
+                    
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            이자납입정보
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            금리조건
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            보증금
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            잔존가치
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            여신기간
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-dt">
+                                            <thead>
+                                                <tr>
+                                                    <th>기간</th>
+                                                    <th>여신기간(개월)</th>
+                                                    <th>원금상환비율(%)</th>
+                                                    <th>여신금액</th>
+                                                    <th>가감금리(%)</th>
+                                                    <th>실행이자율(%)</th>
+                                                    <th>기간리스료</th>
+                                                    <th>기간자동차세</th>
+                                                    <th>기간M/T수수료</th>
+                                                    <th>기간보험료</th>
+                                                    <th>납입액</th>
+                                                </tr>    
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            수익률
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            스케줄내역
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-dt">
+                                            <thead>
+                                                <tr>
+                                                    <th>기간</th>
+                                                    <th>여신기간(개월)</th>
+                                                    <th>원금상환비율(%)</th>
+                                                    <th>여신금액</th>
+                                                    <th>가감금리(%)</th>
+                                                    <th>실행이자율(%)</th>
+                                                    <th>기간리스료</th>
+                                                    <th>기간자동차세</th>
+                                                    <th>기간M/T수수료</th>
+                                                    <th>기간보험료</th>
+                                                    <th>납입액</th>
+                                                </tr>    
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                        <div class="card">       
+                            <div class="card-body">
+                                <ul class="fm-wrap">
+                                    <li>
+                                        <h4>
+                                            기본조건
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>통화구분</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>상품명</th>
+                                                    <td colspan="3">
+                                                        <ul class="ins-box box12">
+                                                            <li>
+                                                                <ul class="fm_ipt_btn">
+                                                                    <li>
+                                                                        <input type="text" />
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="infm_btn">검색</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <input type="text" />
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <th>
+                                                        대출금액
+                                                    </th>
+                                                    <td>
+                                                        <input type="text" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <ul class="fm_ipt_mth">
+                                                            <li>
+                                                                <input type="text" />                                                            
+                                                            </li>
+                                                            <li>
+                                                                <button class="infm_btn mth">날짜선택</button>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td colspan="3">
+                                                        <ul class="ins-box">
+                                                            <li>
+                                                                <ul class="fm_ipt_sel">
+                                                                    <li>
+                                                                        <select>
+                                                                            <option>선택하세요</option>
+                                                                        </select>
+                                                                    </li>
+                                                                    <li>
+                                                                        <input type="text" />
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <ul class="fm_ipt_mth">
+                                                                    <li>
+                                                                        <input type="text" />                                                            
+                                                                    </li>
+                                                                    <li>
+                                                                        <button class="infm_btn mth">날짜선택</button>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>
+                                                                <ul class="fm_ipt_unt">
+                                                                    <li><input type="text" /></li>
+                                                                    <li>개월</li>
+                                                                </ul>                                                            
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환주기</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>초회차조정여부</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>만기일고정여부</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>N</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>단수처리</th>
+                                                    <td>
+                                                        <ul class="fm_ipt_dual">
+                                                            <li>
+                                                                <select>
+                                                                    <option>선택하세요</option>
+                                                                </select>
+                                                            </li>
+                                                            <li>
+                                                                <select>
+                                                                    <option>선택하세요</option>
+                                                                </select>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>대출기간분할여부</th>
+                                                    <td colspan="3">
+                                                        <ul class="fm_ipt_dual">
+                                                            <li>
+                                                                <label>
+                                                                    <input type="radio" name="aa001">
+                                                                    Y
+                                                                </label>
+                                                            </li>
+                                                            <li>
+                                                                <label>
+                                                                    <input type="radio" name="aa001">
+                                                                    N
+                                                                </label>
+                                                            </li>
+                                                        </ul>
+                                                    </td>                                                
+                                                    <th>리스방식</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>리스료계산방식</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>규손금적용</th>
+                                                    <td colspan="3">
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>수입수수료</th>
+                                                    <td>
+                                                        <input type="number ">
+                                                    </td>
+                                                    <th>지급수수료</th>
+                                                    <td>
+                    
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            이자납입정보
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            금리조건
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            보증금
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            잔존가치
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            여신기간
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-dt">
+                                            <thead>
+                                                <tr>
+                                                    <th>기간</th>
+                                                    <th>여신기간(개월)</th>
+                                                    <th>원금상환비율(%)</th>
+                                                    <th>여신금액</th>
+                                                    <th>가감금리(%)</th>
+                                                    <th>실행이자율(%)</th>
+                                                    <th>기간리스료</th>
+                                                    <th>기간자동차세</th>
+                                                    <th>기간M/T수수료</th>
+                                                    <th>기간보험료</th>
+                                                    <th>납입액</th>
+                                                </tr>    
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            수익률
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-form">
+                                            <colgroup>
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                                <col width="12.5%">
+                                            </colgroup>
+                                            <thead>
+                
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>원금상환방법</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>실행일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                    <th>대출만기일자</th>
+                                                    <td>
+                                                        <select>
+                                                            <option>선택하세요</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            스케줄내역
+                                            <button class="btn-help plus">도움말</button>
+                                        </h4>
+                                        <table class="tb-dt">
+                                            <thead>
+                                                <tr>
+                                                    <th>기간</th>
+                                                    <th>여신기간(개월)</th>
+                                                    <th>원금상환비율(%)</th>
+                                                    <th>여신금액</th>
+                                                    <th>가감금리(%)</th>
+                                                    <th>실행이자율(%)</th>
+                                                    <th>기간리스료</th>
+                                                    <th>기간자동차세</th>
+                                                    <th>기간M/T수수료</th>
+                                                    <th>기간보험료</th>
+                                                    <th>납입액</th>
+                                                </tr>    
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>                              
+                                        </table>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="float-btn-bar">
+                    <ul class="row">
+                        <li>
+                            <button type="submit" class="btn btn-info">초기화</button>
+                        </li>
+                        <li>
+                            <button type="submit" class="btn btn-info">미리보기</button>
+                        </li>
+                        <li>
+                            <button type="submit" class="btn btn-info">스케줄시뮬레이션</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="toast_box">
+        <button class="btn_close">닫기</button>
+        <p></p>
+    </div>
+<script type="text/javascript" src="resources/lib/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {});
+</script>
+</body>
+</html>
